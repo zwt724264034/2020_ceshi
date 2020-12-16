@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_personal_heder"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_personal_heder"
+            android:text="sssssssssss"
+            android:textColor="@color/mcv_text_date_light"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/bt_personal_attention"
+            android:layout_width="60dp"
+            android:layout_height="34dp"
+            android:layout_below="@id/iv_personal_heder"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@id/bt_personal_liaota"
+            android:background="@drawable/attention_bg"
+            android:text="+关注"
+            android:textColor="#E43570" />
+
+        <Button
+            android:id="@+id/bt_personal_liaota"
+            android:layout_width="60dp"
+            android:layout_height="34dp"
+            android:layout_below="@id/iv_personal_heder"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/attention_bg1"
+            android:text="撩Ta"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/tv_personal_gexingqianming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_username"
+            android:text="ssssssss"
+            android:textColor="@color/search_layover_bg"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_tongji"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_personal_gexingqianming">
+            <TextView
+                android:id="@+id/tv_user_attention"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="7"
+                android:textSize="30dp" />
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/tv_user_fans"-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_weight="1"-->
+            <!--            android:background="@color/mcv_text_date_light"-->
+            <!--            android:text="16"-->
+            <!--            android:textSize="30dp" />-->
+
+            <TextView
+                android:id="@+id/tv_user_experience"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/mcv_text_date_light"
+                android:text="855"
+                android:textSize="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_juti_data"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/ll_tongji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="关注"
+                android:textSize="24dp"
+                android:background="@color/mcv_text_date_light"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="粉丝"
+                android:textSize="24dp"
+                android:background="@color/mcv_text_date_light"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="经验值"
+                android:textSize="24dp"
+                android:background="@color/mcv_text_date_light"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_xian___"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ll_juti_data"
+            android:layout_width="match_parent"
+            android:text="----------------------------------------------------------------------------------------------------"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_personal"
+            android:layout_below="@+id/tv_xian___"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.viewpager.widget.ViewPager
+            android:layout_below="@id/tab_personal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>
